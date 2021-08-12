@@ -9,7 +9,8 @@
         body {
             background-color: lightskyblue;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin :5;
+            margin :0
+            ;
         }
 
         h2 {
@@ -27,9 +28,23 @@
             background-color: pink;
             display : grid;
             place-content: center;
+            
         }
 
-        
+        #catpic {
+            position : absolute;
+            left : 10px;
+            top : 20px;
+            width : 60px;
+            
+        }
+
+        #catpic:hover {
+            transform : scale(5) translate(50px,20px);
+            transition : 3s;
+
+        }
+
         .myHeader h1 {
             
         }
@@ -118,6 +133,7 @@
     <div class=wrapper>
         <!-- The definition for the page heading -->
         <div class="myHeader">
+            <img id="catpic" src="cat.png" alt="">
             <h1 id="title">Animals are Cute</h1>
         </div>
     
